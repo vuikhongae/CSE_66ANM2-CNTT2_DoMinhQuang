@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar h2 {
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.navbar button {
+    background: rgba(255,255,255,0.2);
+    border: 1px solid white;
+    color: white;
+    padding: 8px 16px;
+    backdrop-filter: blur(6px);
+    cursor: pointer;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+    background: transparent;
+    color: white;
+    z-index: 10;
+}
+
+.hero {
+    height: 350px;
+    background: url("https://picsum.photos/1200/400") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 60px;
+}
+
+.hero-content {
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.hero-content button {
+    margin-top: 15px;
+    padding: 12px 26px;
+
+    background: #ffd43b;
+    color: black;
+
+    border: none;
+    border-radius: 30px;
+
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-content button:hover {
+    background: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.highlights {
+    text-align: center;
+    padding: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 24px;
+}
+
+.social-icons i {
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2);
+}
