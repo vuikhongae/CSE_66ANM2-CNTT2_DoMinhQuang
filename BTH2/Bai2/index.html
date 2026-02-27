@@ -1,63 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Travel Page</title>
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header>
-    <nav class="navbar">
-        <h2>TRAVEL GOALS</h2>
-        <button>Destination</button>
-    </nav>
-</header>
-
-<main>
-
-<section class="hero">
-    <div class="hero-content">
-        <h1>JOE'S TRAVEL PAGE</h1>
-        <p>LET'S EXPLORE THE WORLD TOGETHER</p>
-        <button>Discover places</button>
-    </div>
-</section>
-
-<section class="highlights">
-    <h3>HIGHLIGHTS</h3>
-
-    <div class="cards">
-        <div class="card">
-            <img src="https://picsum.photos/300/150?1">
-            <p>MIAMI USA</p>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Oleo+Script:wght@700&family=Quicksand:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="shared.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Travel Goals</title>
+  </head>
+  <body>
+    <header>
+      <div id="page-logo">
+        <a href="/index.html">Travel Goals</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/places.html">Destinations</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <div id="hero-content">
+          <h1>Joe's Travel Page</h1>
+          <p>Let's explore the world together!</p>
+          <a href="/places.html">Discover places</a>
         </div>
-
-        <div class="card">
-            <img src="https://picsum.photos/300/150?2">
-            <p>MUNICH GERMANY</p>
-        </div>
-
-        <div class="card">
-            <img src="https://picsum.photos/300/150?3">
-            <p>BARCELONA SPAIN</p>
-        </div>
-    </div>
-
-</section>
-
-</main>
-
-<footer>
-    <div class="social-icons">
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-facebook"></i>
-    </div>
-</footer>
-
-</body>
+      </section>
+      <section id="highlights">
+        <h2>Highlights</h2>
+        <ul id="destinations">
+          <li class="destination">
+            <img
+              src="images/places/miami.jpg"
+              alt="Miami streets on sunny day"
+            />
+            <p>Miami <strong>USA</strong></p>
+          </li>
+          <li class="destination">
+            <img
+              src="images/places/munich.jpg"
+              alt="Munich stadium in winter"
+            />
+            <p>Munich <strong>Germany</strong></p>
+          </li>
+          <li class="destination">
+            <img
+              src="images/places/barcelona.jpg"
+              alt="Palm beach in Barcelona"
+            />
+            <p>Barcelona <strong>Spain</strong></p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="https://www.instagram.com">
+            <img src="images/icons/insta.png" alt="Instagram logo"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com">
+            <img src="images/icons/facebook.png" alt="Facebook logo"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
