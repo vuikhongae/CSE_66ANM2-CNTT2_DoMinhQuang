@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+<meta charset="UTF-8">
+<title>Multi Step Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Form Đăng Ký</h2>
+
+<div id="progressText">Bước 1 / 3</div>
+
+<div id="progressBar">
+<div id="progress"></div>
+</div>
+
+<form id="multiForm">
+
+<!-- STEP 1 -->
+
+<div class="step" id="step1">
+
+<h3>Thông tin cá nhân</h3>
+
+<label>Họ tên</label>
+<input type="text" id="fullname">
+<span class="error" id="fullnameError"></span>
+
+<label>Ngày sinh</label>
+<input type="date" id="dob">
+<span class="error" id="dobError"></span>
+
+<label>Giới tính</label>
+<div>
+<input type="radio" name="gender" value="Nam"> Nam
+<input type="radio" name="gender" value="Nữ"> Nữ
+</div>
+<span class="error" id="genderError"></span>
+
+<button type="button" id="next1">Tiếp theo</button>
+
+</div>
+
+
+<!-- STEP 2 -->
+
+<div class="step" id="step2">
+
+<h3>Thông tin tài khoản</h3>
+
+<label>Email</label>
+<input type="text" id="email">
+<span class="error" id="emailError"></span>
+
+
+<label>Mật khẩu</label>
+
+<div class="password-wrapper">
+
+<input type="password" id="password">
+
+<span id="togglePassword">👁</span>
+
+</div>
+
+<div id="strengthBar">
+<div id="strengthLevel"></div>
+</div>
+
+<div id="strengthText"></div>
+
+<span class="error" id="passwordError"></span>
+
+
+<label>Xác nhận mật khẩu</label>
+<input type="password" id="confirmPassword">
+<span class="error" id="confirmError"></span>
+
+
+<div class="buttons">
+<button type="button" id="back1">Quay lại</button>
+<button type="button" id="next2">Tiếp theo</button>
+</div>
+
+</div>
+
+
+<!-- STEP 3 -->
+
+<div class="step" id="step3">
+
+<h3>Xác nhận thông tin</h3>
+
+<div id="summary"></div>
+
+<div class="buttons">
+<button type="button" id="back2">Quay lại</button>
+<button type="submit">Đăng ký</button>
+</div>
+
+</div>
+
+</form>
+
+<div id="success"></div>
+
+<script src="script1.js"></script>
+
+</body>
+</html>

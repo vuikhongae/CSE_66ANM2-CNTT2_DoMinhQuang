@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Quản lý điểm sinh viên</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:40px;
+}
+
+input,select{
+padding:6px;
+margin-right:10px;
+}
+
+button{
+padding:6px 12px;
+cursor:pointer;
+}
+
+table{
+border-collapse:collapse;
+margin-top:20px;
+width:650px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:8px;
+text-align:center;
+}
+
+th{
+cursor:pointer;
+}
+
+.low-score{
+background:#ffeaa7;
+}
+
+.stats{
+margin-top:15px;
+font-weight:bold;
+}
+
+.no-result{
+text-align:center;
+color:red;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>Quản lý điểm sinh viên</h2>
+
+<input type="text" id="name" placeholder="Họ tên">
+<input type="number" id="score" placeholder="Điểm (0-10)" step="0.1">
+<button id="addBtn">Thêm</button>
+
+<br><br>
+
+<input type="text" id="search" placeholder="Tìm sinh viên...">
+
+<select id="filterRank">
+<option value="all">Tất cả</option>
+<option value="Giỏi">Giỏi</option>
+<option value="Khá">Khá</option>
+<option value="Trung bình">Trung bình</option>
+<option value="Yếu">Yếu</option>
+</select>
+
+<table>
+
+<thead>
+<tr>
+<th>STT</th>
+<th>Họ tên</th>
+<th id="sortScore">Điểm</th>
+<th>Xếp loại</th>
+<th>Thao tác</th>
+</tr>
+</thead>
+
+<tbody id="tableBody"></tbody>
+
+</table>
+
+<div id="stats" class="stats"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
